@@ -2,11 +2,23 @@
 let colorPicked = $("#colorPicker");
 
 // Select size input
-var gridHeight = $("#inputHeight");
-var gridWeight = $("#inputWeight");
+let gridHeight = $("#inputHeight");
+let gridWeight = $("#inputWeight");
+
+// Check input height and input weight
+$('#inputHeight').on("keypress", function () {
+  if ($(this).val() > 10000) {
+    alert("Number must be less than 1000");
+  }
+});
+
+$('#inputWeight').on("keypress", function () {
+  if ($(this).val() > 10000) {
+    alert("Number must be less than 1000");
+  }
+});
 
 // When size is submitted by the user, call makeGrid()
-
 $('#submit_button').click(function (a) {
   a.preventDefault();
   makeGrid();
@@ -18,10 +30,10 @@ function makeGrid() {
 
   const alc = document.getElementById('pixel_canvas');
   alc.innerHTML = '';
-  var height = gridHeight.val();
-  var weight = gridWeight.val();
+  let height = gridHeight.val();
+  let weight = gridWeight.val();
 
-  var addEvent = function (drawTable) {
+  let addEvent = function (drawTable) {
     drawTable.addEventListener('click', function () {
       drawTable.style.backgroundColor = colorPicked.val();
     });
