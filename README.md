@@ -39,8 +39,8 @@ This repository is the starter code for _all_ Udacity students. Therefore, we mo
 
 ## Acknowledgments
 
-Udacity
-Andela
-Google
+Udacity.
+Andela.
+Google.
 The entire ALC community.
 
