@@ -1,49 +1,44 @@
 // Select color input
-let colorPicked = $("#colorPicker");
+let colorPicked = $("#color-Picker");
 
 // Select size input
 let gridHeight = $("#inputHeight");
-let gridWeight = $("#inputWeight");
+let gridWidth = $("#inputWidth");
 
-// Check input height and input weight
-$('#inputHeight').on("keypress", function () {
-  if ($(this).val() > 10000) {
-    alert("Number must be less than 1000");
-  }
-});
-
-$('#inputWeight').on("keypress", function () {
-  if ($(this).val() > 10000) {
-    alert("Number must be less than 1000");
-  }
-});
-
-// When size is submitted by the user, call makeGrid()
-$('#submit_button').click(function (a) {
+// Listen to click on the sunmit button, once user clicks call makeGrid()
+$('#submit-button').click(function (a) {
+  //if the event does is not explicitly handled, default action should not be taken.
   a.preventDefault();
   makeGrid();
 });
 
+/**
+    * @description creates a dynamic grid of cells
+    * @param {number} height - users inputed height
+    * @param {number} weight - users inputed weight
+    * @returns {html} Rows of table data
+*/
+
 function makeGrid() {
 
-  // Your code goes here!
-
+  // Make grid 
   const alc = document.getElementById('pixel_canvas');
   alc.innerHTML = '';
   let height = gridHeight.val();
-  let weight = gridWeight.val();
+  let width = gridWidth.val();
 
+  //listen to click event by the user and sets the cell background to the color picked by the user.
   let addEvent = function (drawTable) {
     drawTable.addEventListener('click', function () {
       drawTable.style.backgroundColor = colorPicked.val();
     });
   }
 
-
-  for (var i = 0; i < height; i++) {
-    var row = alc.insertRow(i);
-    for (var j = 0; j < weight; j++) {
-      var drawTable = row.insertCell(j);
+  //creates row and column using a loop and return table
+  for (let i = 0; i < height; i++) {
+    let row = alc.insertRow(i);
+    for (let j = 0; j < width; j++) {
+      let drawTable = row.insertCell(j);
       drawTable.addEventListener('click', addEvent(drawTable));
     }
   }
