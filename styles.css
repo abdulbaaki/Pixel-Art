@@ -1,19 +1,17 @@
 html,
 body,
+h1,
 select {
     font-family: 'exo', sans-serif;    
 }
 
 html,
 body {
-    font-family: 'exo', sans-serif;
     margin: 0;
     padding: 0; 
 }
 
 h1 {
-    /* font: 70px/1.75 'exo', sans-serif;  */
-    font-family: 'exo', sans-serif;    
     font-size: 70px;
     line-height: 1.75em;
     margin: 0;
