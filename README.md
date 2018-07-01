@@ -14,15 +14,13 @@
 
 To get started, open the `index.html`,`designs.js` and `style.css` and you can proceed with making changes to the application.
 
-For specific, detailed instructions, look at the project instructions in the [Udacity Classroom]().
-
 ## Pre-requsite
 
 The latest versions of Google Chrome, Safari, Mozilla FireFox or Internet Explorer.
 
 ## Deployement
 
-The application has been hosted online and it can be accessed at [abdulbaaki pixel art](https://classroom.udacity.com/me).
+The application has been hosted online and it can be accessed at [abdulbaaki pixel art](https://abdulbaaki.github.io/Pixel-Art/).
 
 ## Built With
 
