@@ -1,21 +1,25 @@
-html, body, input, select{
-    font-family: 'Exo', sans-serif;    
+html,
+body,
+select {
+    font-family: 'exo', sans-serif;    
 }
 
-html, body {
-    font-family: 'Exo', sans-serif;
+html,
+body {
+    font-family: 'exo', sans-serif;
     margin: 0;
     padding: 0; 
 }
 
 h1 {
-    font-family: 'Exo', sans-serif;    
+    /* font: 70px/1.75 'exo', sans-serif;  */
+    font-family: 'exo', sans-serif;    
     font-size: 70px;
     line-height: 1.75em;
     margin: 0;
     color: white;
     text-align: center;
-    background: #F44336;    
+    background: #f44336;    
 }
 
 h2 {
@@ -28,7 +32,7 @@ h2:first-of-type {
     color: red;
 }
 
-#colorPicker{
+#color-Picker {
     border-radius: 25px;
     width: 100px;
 }
@@ -53,14 +57,14 @@ td {
     width: 20px;
 }
 
-#sizePicker{
+#size-Picker {
     box-sizing: border-box;
     float: left;
     width: 20%;
     padding: 20px;
 }
 
-.canvas-holder{
+.canvas-holder {
     box-sizing: border-box;  
     float: left;
     padding: 20px;
@@ -68,7 +72,7 @@ td {
     width: 80%;
 }
 
-label{
+label {
     cursor: pointer;
     display: block;
     margin: 0 0 10px;
@@ -89,9 +93,9 @@ input {
     width: 100%;
 }
 
-#submit_button{
+#submit-button {
     color: #ffffff;
-    background: #F44336;
+    background: #f44336;
     border: none;
     border-radius: 5px;
     cursor: pointer;
